@@ -29,4 +29,11 @@ describe("<TodoApp />", () => {
         fireEvent.click(todoText);
         expect(todoText).toHaveStyle("text-decoration: line-through;");
     });
+    it("remove todo", () => {
+        const { getByText } = render(<TodoApp />);
+        const todoText = getByText("Learn TDD");
+        const removeButton = todoText.nextSibling;
+        fireEvent.click(removeButton);
+        expect(todoText).not.toBeInTheDocument();
+    });
 });
