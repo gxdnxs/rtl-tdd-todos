@@ -19,7 +19,7 @@ docker run -itd --rm --name rtl-tdd-todos -p 3000:3000 gydnjs/ksa:rtl-tdd-todos
 ## Git local config
 ```
 git init
-git config --global user.name 'gydnjs'
+git config --global user.name 'gxdnxs'
 git config --global user.email 'projectann215@gmail.com'
 git branch -M main
 ```
