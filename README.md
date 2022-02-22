@@ -2,6 +2,35 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Docker devl
+```
+docker run -itd --name rtl-tdd-todos -p 3000:3000 node 16.14.0-bullseye
+docker commit rtl-tdd-todos gydnjs/ksa:rtl-tdd-todos
+docker push gydnjs/ksa:rtl-tdd-todos
+docker pull gydnjs/ksa:rtl-tdd-todos
+```
+
+## Docker delivert
+```
+docker container stop rtl-tdd-todos
+docker pull gydnjs/ksa:rtl-tdd-todos
+docker run -itd --rm --name rtl-tdd-todos -p 3000:3000 gydnjs/ksa:rtl-tdd-todos
+```
+## Git local config
+```
+git init
+git config --global user.name 'gydnjs'
+git config --global user.email 'projectann215@gmail.com'
+git branch -M main
+```
+
+## git remote config
+ID, PW는 윈도우즈 자격증명관리에 등록을 했다.
+```
+git remote add origin http://github.com/gydnjs/rtl-tdd-todos.git (Github repository HTTPS URL)
+git push -u origin main
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
