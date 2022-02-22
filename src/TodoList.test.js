@@ -13,7 +13,7 @@ describe("<TodoList />", () => {
             id: 2,
             text: "use react-testing-library",
             done: true,
-        },
+        }
     ];
     it("renders todos properly", () => {
         const { getByText } = render(<TodoList todos={sampleTodos} />);
